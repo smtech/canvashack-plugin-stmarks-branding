@@ -1,0 +1,14 @@
+{
+    "name": "canvashack/plugin-stmarks-branding",
+    "description": "General branding settings for St. Mark's school within Canvas",
+    "type": "canvashack-plugin",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Seth Battis",
+            "email": "sethbattis@stmarksschool.org"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
