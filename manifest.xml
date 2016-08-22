@@ -1,25 +1,33 @@
 <?xml version="1.0"?>
 <canvashack>
-	<name>St. Mark's Branding</name>
-	<id>stmarks-branding</id>
-	<abstract>General branding settings for St. Mark's school within Canvas</abstract>
-	<authors>
-		<author>
-			<name>Seth Battis</name>
-			<email>SethBattis@stmarksschool.org</email>
-		</author>
-	</authors>
-	<components>
-		<css>stmarks-branding.css</css>
-		<canvas>
-			<pages>
-				<include>
-					<page>
-						<type>regex</type>
-						<pattern>/.*/</pattern>
-					</page>
-				</include>
-			</pages>
-		</canvas>
-	</components>
+    <name>St. Mark's Branding</name>
+    <id>stmarks-branding</id>
+    <abstract>General branding settings for St. Mark's school within Canvas</abstract>
+    <authors>
+        <author>
+            <name>Seth Battis</name>
+            <email>SethBattis@stmarksschool.org</email>
+        </author>
+    </authors>
+    <components>
+        <css>stmarks-branding.css</css>
+        <javascript>stmarks-branding.js</javascript>
+        <canvas>
+            <pages>
+                <include>
+                    <page>
+                        <type>regex</type>
+                        <pattern>/.*/</pattern>
+                    </page>
+                </include>
+            </pages>
+            <dom>
+                <bundle>
+                    <event>load</event>
+                    <action>subclassBody()</action>
+                    <selector>body</selector>
+                </bundle>
+            </dom>
+        </canvas>
+    </components>
 </canvashack>
