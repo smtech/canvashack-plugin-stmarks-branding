@@ -1,4 +1,3 @@
-/*global $ */
 var canvashack = {
   subclassBody: function () {
     "use strict";
