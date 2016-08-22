@@ -2,8 +2,9 @@
 
 General branding settings for St. Mark's school within Canvas
 
-## Obsolete
+## Mobile Login Styling
 
-These branding settings were for the pre July 1, 2016 Canvas UI, and are now mostly irrelevant. Much of the functionality in this has been siphoned off into discrete [CanvasHack](https://packagist.org/search/?q=canvashack) plugins.
+Until the mobile login is [included in the Theme Editor](https://community.canvaslms.com/message/40630), we need to style it via actual CSS. It looks like things like button colors leak out into the mobile login, but to match the look and feel of the web login, we need a logo and a background color.
 
-This repository is retained for archival purposes, but is unlikely to be updated.
+###### `stmarks-branding.js`
+Setting the background color actually requires flippin' Javascript, since the page is badly laid out and there is no way to select `body` background without impacting other pages in Canvas.
