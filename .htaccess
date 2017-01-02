@@ -1,5 +1,5 @@
 # Allow access to SVG files
-<Files ~ "(.svg)">
+<Files ~ "(.png)">
     Order allow,deny
     Allow from all
 </Files>

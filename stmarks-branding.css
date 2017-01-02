@@ -1,13 +1,17 @@
-body > #f1_container, body.stmarks-branding-mobile-login {
+/* override god-awful blue diamonds pattern */
+html {
+    background-image: none;
     background-color: #003359;
 }
 
-#f1_container{
-    background: url("@PLUGIN_URL/login.svg") no-repeat center top;
+/* display logo */
+#f1_container {
+    background: url("@PLUGIN_URL/login.png") no-repeat center top;
     background-size: 100% auto;
     width: 302px;
 }
 
+/* update "Forgot Password?" link color/style */
 #f1_container a {
     color: white;
     text-decoration: none;
